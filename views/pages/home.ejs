@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body ng-controller="mainController">
+
+<!-- HEADER AND NAVBAR -->
+<div class="page-header no-margin">
+	<div id="header_text_div">
+		<div class="logo_img">
+			<img src="humm_burned.png" class="img-responsive">
+		</div>
+		<h1>Southern Sunshine & Roses</h1>
+	</div>
+</div>
+
+
+<nav class="navbar navbar-default navbar-static-top site-navbar">
+	<div class="container">      
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+			<li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+			<li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+			<li><a href="#gallery"><i class="fa fa-picture-o"></i> Gallery</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+
+        <div ng-view></div>  
+    </div>
+
+<!-- Adding Footer-->
+<footer class="site-footer navbar-fixed-bottom">
+    <div class= "container">
+        		<span class="glyphicon glyphicon-copyright-mark"></span> Copyright ChelseaFelter 2015
+    </div>
+</footer>
+
+<!--<script src="js/lightbox.js"></script>-->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
