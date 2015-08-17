@@ -48,7 +48,8 @@
     #header_text_div h1 {
       margin: 0;
       padding-top: 0.3em;
-      font-size: 3em;
+      font-size: 4em;
+      font-family: 'Tangerine', serif;
     }
     #header_text_div .logo_img {
       position:absolute;
@@ -90,6 +91,12 @@
       background-color: #00e5ee;
       padding: 10px;
       color:#777;
+    }
+
+    .media-heading {
+      font-family: 'Tangerine', serif;
+      font-size: 40px;
+      font-weight: bold;
     }
 
 
