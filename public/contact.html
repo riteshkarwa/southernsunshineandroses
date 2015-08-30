@@ -1,5 +1,64 @@
-  <div class="jumbotron text-center">
-        <h1>Contact Page</h1>
+<div class="container">
+	    <h1> We'd love to hear from you </h1>
+	<hr/>
+	<form action="/send" name="contactus" id="contactus" method="post">
+	    <div class="row">
+	        <div class="col-md-6">
+	            <p>
+	              	<label for="name">Name:</label><br/>
+	              	<input  name="name" type="text" value="" id="name"  placeholder="Enter your name" class="form-control"/>
+	            </p>
+	        </div>
+	    </div>
+        <div class="row">
+          	<div class="col-md-6">
+            	<p>
+              		<label for="email">Email:</label><br/>
+              		<input  name="email" type="text" value="" id="email"  placeholder="Enter E-mail address" class="form-control"/>
+            	</p>
+          	</div>
+        </div>
+        <div class="row">
+          	<div class="col-md-6">
+            	<p>
+              		<label for="subject">Subject:</label><br/>
+              		<input  name="subject" type="text" value="" id="subject"  placeholder="Feedback Subject" class="form-control"/>
+            	</p>
+          	</div>
+        </div>
+        <div class="row">
+          	<div class="col-md-6">
+            	<p>
+              		<label for="message">Message:</label><br/>
+              		<textarea  name="message"  rows="5" id="message"  placeholder="Enter your concerns and how we can help you out" class="form-control"></textarea>
+            	</p>
+          	</div>
+        </div>  
+        <p>
+          	<button class="btn btn-primary btn-md" name="submit" type="button" value="Send" id="submit">Send</button>
+        </p>
+        <div id="send_message"></div>
+	</form>
+</div>
 
-        <p>{{ message }}</p>
-  </div>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    var name,email,subject,text;
+    $("#submit").click(function(){
+      name= $('#name').val();
+      subject= $('#subject').val();
+      email = $('#email').val();
+      text = $('#message').val();
+      $.post("http://localhost:5000/send", {name:name,email:email,subject:subject, text:text}, function(data){   
+        if(data=="sent")
+        {
+          $("#send_message").text("Message has been sent. Thank you for the feedback");
+          $("#contactus").trigger('reset');
+          $("#send_message").fadeOut(6000);
+        }
+      });
+    });
+  });
+	
+</script>

@@ -1,5 +1,23 @@
 var express = require('express');
+var nodemailer = require("nodemailer");
+var bodyParser = require("body-parser");
 var app = express();
+
+/*
+Here we are configuring our SMTP Server details.
+STMP is mail server which is responsible for sending and recieving email.
+*/
+var smtpTransport = nodemailer.createTransport("SMTP",{
+service: "Gmail",
+auth: {
+user: "ssrfelter@gmail.com",
+pass: "19august"
+}
+});
+
+/*------------------Routing Started ------------------------*/
+
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -14,9 +32,31 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 */
+
 app.get('/', function(request, response) {
   //response.render('pages/index');
   response.sendFile(__dirname +'/public/index1.html');
+});
+
+app.post('/send', function(req, res){
+  console.log("in mail controller");
+  var mailOptions={
+    from : req.body.name + ' &lt;' + req.body.email + '&gt;',
+    to : "ssrfelter@gmail.com",
+    subject : req.body.subject,
+    text : req.body.text
+  }
+  console.log(mailOptions);
+  
+  smtpTransport.sendMail(mailOptions, function(error, response){
+    if(error){
+      console.log(error);
+      res.end("error");
+    }else{
+      console.log("Message sent: " + response.message);
+      res.end("sent");
+    }
+  });
 });
 
 /*
@@ -25,6 +65,7 @@ app.get('/home', function(request, response) {
   response.sendFile(__dirname +'/public/index1.html');
 });
 */
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
@@ -44,5 +85,4 @@ app.get('/', function (req, res) {
 res.sendFile(__dirname + '/pages/index.html');
 
 });
-
 */
