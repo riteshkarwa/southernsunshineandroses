@@ -30,78 +30,83 @@
       max-width: 100%; }
 
 .site-navbar{
-      background-color: #00e5ee;
-    }
-    #header_text{
-      font-family: 'Tangerine', serif;
-      font-size: 48px;
-      text-shadow: 4px 4px 4px #aaa;
-    }
+  background-color: #00e5ee;
+}
 
-    #header_text_div {
-      width:100%;
-      text-align:center;
-      position:relative;
-      height: 6em;
-      margin-top: 1.2em;
-    }
-    #header_text_div h1 {
-      margin: 0;
-      padding-top: 0.3em;
-      font-size: 4em;
-      font-family: 'Tangerine', serif;
-    }
-    #header_text_div .logo_img {
-      position:absolute;
-      top: 0;
-      left:1.2em;
-    }
-    .logo_img img {
-      height: 7em;
-      padding-bottom: 10px;
-    }
+#header_text{
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
 
-    .no-margin{
-      margin:0px;
-    }
-    .no-padding{
-      padding:0px;
-    }
+#header_text_div {
+  width:100%;
+  text-align:center;
+  position:relative;
+  height: 6em;
+  margin-top: 1.2em;
+}
+    
+#header_text_div h1 {
+  margin: 0;
+  padding-top: 0.3em;
+  font-size: 4em;
+  font-family: 'Tangerine', serif;
+}
 
-    #list{
-      font-family: 'Tangerine', serif;
-      font-size: 48px;
-    }
+#header_text_div .logo_img {
+  position:absolute;
+  top: 0;
+  left:1.2em;
+}
 
-    .media-object{
-      width: 200px;
-      height: 200px;
+.logo_img img {
+  height: 7em;
+  padding-bottom: 10px;
+}
 
-    }
+.no-margin{
+  margin:0px;
+}
 
-    .media-body{
-      padding: 20px;
-    }
+.no-padding{
+  padding:0px;
+}
 
-    .img_class{
-      margin-left: 15px;
-    }
+#list{
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+}
 
-    .site-footer{
-      background-color: #00e5ee;
-      padding: 10px;
-      color:#777;
-    }
+.media-object{
+  width: 200px;
+  height: 200px;
+}
 
-    .media-heading {
-      font-family: 'Tangerine', serif;
-      font-size: 40px;
-      font-weight: bold;
-    }
+.media-body{
+  padding: 20px;
+}
 
-    #main{
-      margin-bottom: 50px;
-      clear: both;
-    }
+.img_class{
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.site-footer{
+  background-color: #00e5ee;
+  padding: 10px;
+  color:#777;
+}
+
+.media-heading {
+  font-family: 'Tangerine', serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#main{
+  margin-bottom: 50px;
+  clear: both;
+}
 
 
