@@ -89,7 +89,7 @@
 
 .img_class{
   margin-left: 15px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .site-footer{
@@ -107,6 +107,10 @@
 #main{
   margin-bottom: 50px;
   clear: both;
+}
+
+.img-center {
+    margin: 0 auto;
 }
 
 
