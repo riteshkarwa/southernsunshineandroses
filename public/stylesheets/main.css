@@ -89,7 +89,7 @@
 
 .img_class{
   margin-left: 15px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .site-footer{
@@ -99,9 +99,13 @@
 }
 
 .media-heading {
-  font-family: 'Tangerine', serif;
+  font-family: 'Hind', sans-serif;
   font-size: 40px;
   font-weight: bold;
+}
+
+.media-paragaraph {
+  font-family: 'Hind', sans-serif;
 }
 
 #main{
