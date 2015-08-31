@@ -41,7 +41,7 @@ app.get('/', function(request, response) {
 app.post('/send', function(req, res){
   console.log("in mail controller");
   var mailOptions={
-    from : req.body.name + ' &lt;' + req.body.email + '&gt;',
+    from : req.body.name + " " + req.body.email + " ",
     to : "ssrfelter@gmail.com",
     subject : req.body.subject,
     text : req.body.text
