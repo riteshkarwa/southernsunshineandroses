@@ -87,9 +87,12 @@
   padding: 20px;
 }
 
-.img_class{
+.img-class{
   margin-left: 15px;
   margin-top: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
 }
 
 .site-footer{
@@ -117,4 +120,21 @@
     margin: 0 auto;
 }
 
+.things{
+   text-align: center;
+   font-family: 'Hind', sans-serif;
+}
+
+.thumbnail img:hover{
+  transform:scale(1.1);
+}
+
+.thumbnail img{
+transition:all 0.3s ease 0s;
+width: 100%;
+}
+ 
+ .thumbnail{
+  overflow: hidden;
+ }
 
