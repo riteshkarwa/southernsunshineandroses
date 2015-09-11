@@ -124,7 +124,7 @@
    text-align: center;
    font-family: 'Hind', sans-serif;
 }
-
+/*
 .thumbnail img:hover{
   transform:scale(1.1);
 }
@@ -137,4 +137,45 @@ width: 100%;
  .thumbnail{
   overflow: hidden;
  }
+ 
+
+figcaption { 
+  font-family: 'Hind', sans-serif;
+  position: absolute; 
+  background: rgba(0,0,0,0.75); 
+  color: white; 
+  padding: 10px 20px; 
+
+  opacity: 0;
+  bottom: 0; 
+  left: 0;
+  right:0;
+
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
+
+figure { 
+  display: block; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+*/
+
+figcaption { 
+  font-family: 'Hind', sans-serif;
+}
+
+.thumbnail{
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 
