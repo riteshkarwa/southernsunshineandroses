@@ -173,8 +173,9 @@ figcaption {
   font-family: 'Hind', sans-serif;
 }
 
-.thumbnail{
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+.img-border{
+  border: 5px solid #000;
+  border-radius: 4px;
 }
 
 
