@@ -1,4 +1,17 @@
 
+/* nvbar toggle button design */
+
+.navbar-default .navbar-toggle{
+   background-color:#777 ;
+   border-color: #777;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+  border-color: #fff;
+}
+
 .site-navbar{
   background-color: #00e5ee;
 }
@@ -353,5 +366,7 @@ p {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
 }​
+
+
 
 
