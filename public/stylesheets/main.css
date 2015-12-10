@@ -367,6 +367,8 @@ p {
     -o-transform: rotate(45deg);
 }​
 
-
+.gallery{
+  padding-bottom:20px; 
+}
 
 
