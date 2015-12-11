@@ -1,5 +1,12 @@
 
-/* nvbar toggle button design */
+@media only screen and (max-width: 480px) {
+#header_text_div { 
+  
+  position:relative;
+  height: 10em;
+
+  }
+}
 
 .navbar-default .navbar-toggle{
    background-color:#777 ;
