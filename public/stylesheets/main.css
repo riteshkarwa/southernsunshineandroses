@@ -1,7 +1,23 @@
 
 @media only screen and (max-width: 480px) {
-#header_text_div { 
-  font-size: 0.6em;
+  
+  #header_text_div { 
+    font-size: 0.6em;
+  }
+
+  div .media-object {
+    width: 120px;
+    height: 120px;
+  }
+
+  div .media-heading {
+    margin: 0 0 4px;
+  }
+
+  div .media-heading {
+    font-family: 'Hind', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
   }
 }
 
