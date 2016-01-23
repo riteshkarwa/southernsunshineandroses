@@ -104,6 +104,14 @@ var scotchApp = angular.module('myApp', ['ngRoute']);
                 });
                 } else {
                 image.likes -= 1;
+                $http.put('/api/update_likes/' + image.id, {likes:image.likes})
+                    .success(function(data) {
+                    $scope.todoData = data;
+                    console.log(data);
+                })
+                .error(function(data) {
+                    console.log('Error: ' + data);
+                });
                 image.been_liked = false;
             }
         }  
