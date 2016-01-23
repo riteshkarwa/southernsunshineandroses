@@ -9,27 +9,50 @@
 <div class="container">
 	<h1 class="alex_brush_font">Welcome to Chelsea's world</h1>
 	<div class="gallery">
-		<div class="row">
-			<div class ="col-md-3 col-sm-3">
-				<a href="img/frenchstand.jpeg" data-title="French Provincial Night Stand" data-lightbox="cool_images">
-					<img src="img/frenchstand.jpeg" width="200px" vspace="10" class= "img-thumbnail img-responsive"/>
-				</a>
-			</div>
-			<div class ="col-md-3 col-sm-3">
-				<a href="img/stand.jpeg" data-title="Side Table For Sale" data-lightbox="cool_images">
-					<img src="img/stand.jpeg" width="200px" vspace="10" class= "img-thumbnail img-responsive"/>
-				</a>
-			</div>
-			<div class ="col-md-3 col-sm-3">
-				<a href="img/cool3.jpeg" data-title="This is my Third cool image" data-lightbox="cool_images">
-					<img src="img/cool3.jpeg" width="200px"  vspace="10" class= "img-thumbnail img-responsive"/>
-				</a>
-			</div>
-			<div class ="col-md-3 col-sm-3">
-				<a href="img/cool4.jpeg" data-title="This is my Fourth cool image" data-lightbox="cool_images">
-					<img src="img/cool4.jpeg" width="200px" vspace="10" class= "img-thumbnail img-responsive"/>
-				</a>
+		<div class="row ">
+			<div class ="col-md-3 col-sm-3 col-xs-8 picture-container" ng-repeat="image in images">
+				<div class="picture-body">
+					<img ng-src="{{image.url}}" vspace="10" class="img-responsive"/>					
+				</div>
+				<div class="picture-footer">
+					<div>
+						<a href ng-click="favorite(image);" class="gallery_href">
+							<i class="fa fa-heart" ng-show="image.been_liked"></i>
+							<i class="fa fa-heart" style="color:gray;" ng-hide="image.been_liked"></i>
+						</a> 
+						<span>
+							{{"\u00A0\u00A0"+image.likes}}
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<style>
+	@media (max-width: 767px) {
+		.picture-container {
+			margin-left: 15%;
+			margin-bottom: 20px;
+		}
+	}
+
+	.img-responsive{
+		margin: 1px;
+		padding: 5px;
+
+	}
+	.picture-body {
+		border: 1px solid lightgray;
+		border-radius: 6px 6px 0px 0px;
+		padding: 4px ;
+		border-bottom: 0px;
+	}
+	.picture-footer {
+		border: 1px solid lightgray;
+        border-radius: 0px 0px 6px 6px;
+	    padding: 5px;
+	    padding-left: 16px
+	}
+</style>

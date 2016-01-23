@@ -146,6 +146,7 @@
   clear: both;
 }
 
+
 .img-center {
     margin: 0 auto;
 }
@@ -169,6 +170,20 @@
 .fa-pinterest{
   color: #777;
 }
+
+
+a, a:visited, a:hover, a:active, a:link, .gallery_href {
+  color: #b20000;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+
+/*
+.fa-heart{
+  font-size: 22px;
+}
+*/
 
 /*
 .thumbnail img:hover{
@@ -231,6 +246,7 @@ overflow:hidden;
 padding:20px 10px;
 
 }
+
 #polaroid figure{
 
 position:relative;
@@ -261,6 +277,7 @@ transform: rotate(2deg);
 -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
 box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, .75);
 }
+
 #polaroid figure:before {
 content: '';
 display: block;
@@ -409,6 +426,4 @@ p {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
 }​
-
-
 
