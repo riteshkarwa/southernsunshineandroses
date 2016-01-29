@@ -20,7 +20,7 @@
 							<i class="fa fa-heart" ng-show="image.been_liked"></i>
 							<i class="fa fa-heart" style="color:gray;" ng-hide="image.been_liked"></i>
 						</a> 
-						<span>
+						<span class="likes_count">
 							{{"\u00A0\u00A0"+image.likes}}
 						</span>
 						<a data-pin-do="buttonPin" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/?url=&media=&description=">
@@ -43,8 +43,14 @@
 	.img-responsive{
 		margin: 1px;
 		padding: 5px;
-
 	}
+
+	.likes_count{
+		margin-right: 7px;
+    position: relative;
+    top: -3px;
+	}
+	
 	.picture-body {
 		border: 1px solid lightgray;
 		border-radius: 6px 6px 0px 0px;
