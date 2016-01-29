@@ -179,11 +179,12 @@ a, a:visited, a:hover, a:active, a:link, .gallery_href {
 }
 
 
-/*
-.fa-heart{
-  font-size: 22px;
+
+.fa-heart:before{
+  position: relative;
+  top: -2px;
 }
-*/
+
 
 /*
 .thumbnail img:hover{
