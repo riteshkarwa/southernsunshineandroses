@@ -74,17 +74,15 @@
 
 		var myDate = new Date();
     var hrs = myDate.getHours();
-
     var greet;
-
     if (hrs < 12){
-    	greet = 'Good Morning';
+    	greet = 'Good Morning Sunshine';
     }
     else if (hrs >= 12 && hrs <= 17){
-    	greet = 'Good Afternoon';
+    	greet = 'Good Afternoon Sweetheart';
     }
     else if (hrs >= 17 && hrs <= 24){
-    	greet = 'Good Evening';
+    	greet = 'Good Evening Honey, I know it has been a long day';
     }
     $(".alex_brush_font").prepend(greet+", ");
 	});
