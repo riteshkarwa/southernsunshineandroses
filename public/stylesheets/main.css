@@ -21,6 +21,38 @@
   }
 }
 
+@media (max-width: 767px) {
+    .picture-container {
+      margin-left: 15%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .img-responsive{
+    margin: 1px;
+    padding: 5px;
+  }
+
+  .likes_count{
+    margin-right: 7px;
+    position: relative;
+    top: -3px;
+  }
+  
+  .picture-body {
+    border: 1px solid lightgray;
+    border-radius: 6px 6px 0px 0px;
+    padding: 4px ;
+    border-bottom: 0px;
+  }
+  .picture-footer {
+    border: 1px solid lightgray;
+        border-radius: 0px 0px 6px 6px;
+      padding: 5px;
+      padding-left: 16px
+  }
+  
+
 #nav.affix {
    position: fixed;
    top: 0;
