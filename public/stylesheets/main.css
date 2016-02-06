@@ -36,7 +36,12 @@
   .likes_count{
     margin-right: 7px;
     position: relative;
-    top: -3px;
+    top: -2px;
+  }
+
+  .pin_it_class{
+    position: relative;
+    top: -2px;
   }
   
   .picture-body {
@@ -51,7 +56,7 @@
       padding: 5px;
       padding-left: 16px
   }
-  
+
 
 #nav.affix {
    position: fixed;
