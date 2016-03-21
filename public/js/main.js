@@ -61,7 +61,7 @@ var scotchApp = angular.module('myApp', ['ngRoute']);
         {
             id: 3,
             url: "img/midcentury.jpeg",
-            title: "This is my Third cool image"
+            title: "Awesome Mid Century Table"
 
         },
         {
