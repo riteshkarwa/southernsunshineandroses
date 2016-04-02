@@ -66,8 +66,8 @@ var scotchApp = angular.module('myApp', ['ngRoute']);
         },
         {
             id: 4,
-            url: "img/cool4.jpeg",
-            title: "This is my Fourth cool image"
+            url: "img/2tier.jpg",
+            title: "Lovely two tiered French Provincial end table"
 
         },
       ]
