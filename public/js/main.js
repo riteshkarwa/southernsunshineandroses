@@ -70,6 +70,12 @@ var scotchApp = angular.module('myApp', ['ngRoute']);
             title: "Lovely two tiered French Provincial end table"
 
         },
+        {
+            id: 5,
+            url: "img/dog_bed.jpg",
+            title: "Adorable bed for your pet"
+
+        },
       ]
 
       //Get all likes 
