@@ -72,10 +72,10 @@ var scotchApp = angular.module('myApp', ['ngRoute']);
         },
         {
             id: 5,
-            url: "img/dog_bed.jpg",
+            url: "img/doggy_bed.jpg",
             title: "Adorable bed for your pet"
 
-        },
+        }
       ]
 
       //Get all likes 
