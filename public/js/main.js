@@ -91,7 +91,7 @@ var scotchApp = angular.module('myApp', ['ngRoute']);
         });
 
         $scope.favorite = function(image) {
-            console.log(image.title);
+            console.log(image.id);
             if (!image.been_liked) {
                     image.likes += 1;    
                     image.been_liked = true;
