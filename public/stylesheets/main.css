@@ -43,6 +43,9 @@
     position: relative;
     top: -4px;
   }
+  .adjust-pic{
+    margin-top: 30px;
+  }
   
   .picture-body {
     border: 1px solid lightgray;
