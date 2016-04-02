@@ -91,18 +91,20 @@ var scotchApp = angular.module('myApp', ['ngRoute']);
         });
 
         $scope.favorite = function(image) {
+            console.log(image.title);
             if (!image.been_liked) {
-                image.likes += 1;    
-                image.been_liked = true;
-                $http.put('/api/update_likes/' + image.id, {likes:image.likes})
-                    .success(function(data) {
-                    $scope.todoData = data;
-                    console.log(data);
-                })
-                .error(function(data) {
-                    console.log('Error: ' + data);
-                });
-                } else {
+                    image.likes += 1;    
+                    image.been_liked = true;
+                    $http.put('/api/update_likes/' + image.id, {likes:image.likes})
+                        .success(function(data) {
+                        $scope.todoData = data;
+                        console.log(data);
+                    })
+                    .error(function(data) {
+                        console.log('Error: ' + data);
+                    });
+                } 
+            else {
                 image.likes -= 1;
                 $http.put('/api/update_likes/' + image.id, {likes:image.likes})
                     .success(function(data) {
