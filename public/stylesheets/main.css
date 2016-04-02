@@ -44,7 +44,8 @@
     top: -4px;
   }
   .adjust-pic{
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
   
   .picture-body {
@@ -217,7 +218,6 @@ a, a:visited, a:hover, a:active, a:link, .gallery_href {
   text-decoration: none;
   cursor:pointer;
 }
-
 
 
 .fa-heart:before{
