@@ -1,3 +1,4 @@
+<!--
 <div class="container">
 	<section class="comments">
         <article class="comment">
@@ -37,3 +38,27 @@
         </article>
     </section>​
 </div>
+-->
+
+<div class="container">
+  <p class="blog-text add-color">
+    Welcome to Southern Sunshine and Roses Guys and Gals. Thank you very much for taking some time out to visit my awesome website, its a work in progress. If you are confused about the website, you can head over to the about page to find more about me. Do check out my work, I have uploaded pictures of my work in the gallery section. If you have any questions and concerns, shoot me a message on facebook. If I want to describe my website in few words, I would say its a place where I showcase my painting talent. I buy outdated furnitures, work on fixing them and make them look preety.
+  </p>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){  
+
+    
+    var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+    var colors = ["#ff3322", hue, "#D1010A", "green", "blue","#6372A5" ,"#8F2FFE","#36ABFE","#520D8C", "#96136F","#77FC5E","#EEB41F","#9C134F","#36ABFE","#FF9900"];
+    
+    $('.add-color').html(function (i, text) {
+      return $.map(text.split(' '), function (word) {
+         return '<span style="color:'
+             + colors[Math.floor(Math.random() * colors.length)]
+             + '">' + word + '</span>';
+      }).join(' ');
+    });
+});
+</script>

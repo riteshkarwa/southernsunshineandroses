@@ -13,6 +13,12 @@ var scotchApp = angular.module('myApp', ['ngRoute']);
                 controller  : 'mainController'
             })
 
+            //route for blogs
+            .when('/blog', {
+                templateUrl : 'blog.html',
+                controller  : 'blogController'
+            })
+
             // route for the about page
             .when('/about', {
                 templateUrl : 'about.html',
@@ -40,6 +46,10 @@ var scotchApp = angular.module('myApp', ['ngRoute']);
 
     scotchApp.controller('aboutController', function($scope) {
         $scope.message = 'Look! I am an about page.';
+    });
+
+    scotchApp.controller('blogController', function($scope) {
+        $scope.message = 'Look! I am a blog page.';
     });
 
     scotchApp.controller('galleryController', function($scope,$http) {
