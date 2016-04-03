@@ -49,14 +49,17 @@
 <script type="text/javascript">
 $(document).ready(function(){  
 
-    
     var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-    var colors = ["#ff3322", hue, "#D1010A", "green", "blue","#6372A5" ,"#8F2FFE","#36ABFE","#520D8C", "#96136F","#77FC5E","#EEB41F","#9C134F","#36ABFE","#FF9900"];
+    /*
+     var colors=["red","orange","blue","#FFE303", "green" ,"#4b0082", "#9B30FF"];
+     var colors = ["#ff3322", hue, "#D1010A", "", "","#6372A5" ,"#8F2FFE","#36ABFE","#520D8C", "#96136F","#77FC5E","#EEB41F","#9C134F","#36ABFE","#FF9900"];
+    */
     
     $('.add-color').html(function (i, text) {
       return $.map(text.split(' '), function (word) {
          return '<span style="color:'
-             + colors[Math.floor(Math.random() * colors.length)]
+             + hue
+          // + colors[Math.floor(Math.random() * colors.length)]
              + '">' + word + '</span>';
       }).join(' ');
     });
