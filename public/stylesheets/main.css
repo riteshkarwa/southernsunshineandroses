@@ -20,7 +20,13 @@
     font-weight: bold;
   }
 }
+@media (max-width: 320px) {
 
+  #header_text_div { 
+    font-size: 0.55em;
+  }
+
+}
 @media (max-width: 767px) {
     .picture-container {
       margin-left: 15%;
