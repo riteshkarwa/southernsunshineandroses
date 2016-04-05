@@ -1,9 +1,11 @@
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 360px) {
   
   #header_text_div { 
     font-size: 0.6em;
+    padding-top: 12px;
   }
+
 
   div .media-object {
     width: 120px;
@@ -128,7 +130,7 @@
     
 #header_text_div h1 {
   margin: 0;
-  padding-top: 0.3em;
+  padding-top: 0.25em;
   font-size: 4em;
   font-family: 'Tangerine', serif;
 }
