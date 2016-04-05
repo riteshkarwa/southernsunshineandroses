@@ -6,8 +6,9 @@
     padding-top: 2px;
   }
 
-  .alex_brush_font h1{
-    font-size: 0.5em;
+  .alex_brush_font {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.5em;
   }
 
   div .media-object {
@@ -39,6 +40,18 @@
       margin-bottom: 20px;
     }
 
+    .alex_brush_font{
+      font-family: 'Alex Brush', cursive;
+      font-size: 3em;
+    }
+
+  }
+
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    .alex_brush_font{
+      font-family: 'Alex Brush', cursive;
+      font-size: 3em;
+    }
   }
 
   .img-responsive{
@@ -87,8 +100,9 @@
 
 .alex_brush_font{
   font-family: 'Alex Brush', cursive;
-  font-size: 3em;
 }
+
+
 .navbar-text {
     margin-top: 8px;
   }
