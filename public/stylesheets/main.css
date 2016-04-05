@@ -6,6 +6,9 @@
     padding-top: 2px;
   }
 
+  .alex_brush_font h1{
+    font-size: 2rem;
+  }
 
   div .media-object {
     width: 120px;
@@ -22,18 +25,20 @@
     font-weight: bold;
   }
 }
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
 
   #header_text_div { 
     font-size: 0.55em;
   }
 
 }
+
 @media (max-width: 767px) {
     .picture-container {
       margin-left: 15%;
       margin-bottom: 20px;
     }
+
   }
 
   .img-responsive{
@@ -82,7 +87,7 @@
 
 .alex_brush_font{
   font-family: 'Alex Brush', cursive;
-  font-size: 60px;
+  font-size: 50px;
 }
 .navbar-text {
     margin-top: 8px;
