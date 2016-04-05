@@ -7,7 +7,7 @@
   }
 
   .alex_brush_font h1{
-    font-size: 2rem;
+    font-size: 0.5em;
   }
 
   div .media-object {
@@ -87,7 +87,7 @@
 
 .alex_brush_font{
   font-family: 'Alex Brush', cursive;
-  font-size: 50px;
+  font-size: 3em;
 }
 .navbar-text {
     margin-top: 8px;
