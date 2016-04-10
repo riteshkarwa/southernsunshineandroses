@@ -47,8 +47,15 @@
 </div>
 
 <script type="text/javascript">
-$(document).ready(function(){  
 
+$(document).ready(function(){  
+    $('p').sakura({
+      s: ['blow-hard-left','blow-medium-right'],
+      className: 'sakura',
+      fallSpeed: 5,
+      newOn: 500,
+      swayAnimations:['sway-3'] 
+    });
     /*
     var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(256 * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
     */
