@@ -97,12 +97,13 @@
    -webkit-transition: all .6s ease-in-out;
 }
 
-
 .alex_brush_font{
   font-family: 'Alex Brush', cursive;
 }
 
-
+.glowing-border{
+  text-shadow: 0 0 0.2em #ff4500, 0 0 0.2em #ff4500, 0 0 0.2em #ff4500;
+}
 .navbar-text {
     margin-top: 8px;
   }
