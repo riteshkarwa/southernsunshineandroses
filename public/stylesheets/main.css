@@ -1,7 +1,11 @@
 
 @media only screen and (max-width: 360px) {
   
-  
+/*  #polaroid figure{
+    position:relative; 
+    right:5px;
+  }*/
+
   #header_text_div { 
     font-size: 0.6em;
     padding-top: 2px;
@@ -29,6 +33,11 @@
 
 }
 @media only screen and (max-width: 320px) {
+
+  #polaroid figure{
+    position:relative; 
+    right:6px;
+  }
 
   #header_text_div { 
     font-size: 0.55em;
@@ -327,7 +336,7 @@ padding:20px 10px;
 
 position:relative;
 width:300px;
-margin:10px 10px 10px 0px;
+margin:10px 10px;
 padding: 7px 8px 10px 8px;
 -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
 -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
