@@ -31,8 +31,8 @@
   #header_text_div { 
     font-size: 0.55em;
   }
-    .container-about-page{
-      margin-left: -10px;
+    figure{
+      width: 250px;
     }
 }
 
