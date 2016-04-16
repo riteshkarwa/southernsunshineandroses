@@ -31,9 +31,7 @@
   #header_text_div { 
     font-size: 0.55em;
   }
-    figure{
-      width: 250px;
-    }
+  
 }
 
 @media (max-width: 767px) {
@@ -327,7 +325,7 @@ padding:20px 10px;
 
 position:relative;
 width:300px;
-margin:10px 20px;
+margin:10px 20px 10px 0px;
 padding: 7px 8px 10px 8px;
 -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
 -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
