@@ -225,7 +225,7 @@
     margin: 0 auto;
 }
 
-.things{
+.things{polaroid
    text-align: center;
    font-family: 'Hind', sans-serif;
 }
@@ -325,7 +325,7 @@ padding:20px 10px;
 
 position:relative;
 width:300px;
-margin:10px 20px 10px 0px;
+margin:10px 10px 10px 0px;
 padding: 7px 8px 10px 8px;
 -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
 -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
