@@ -1,5 +1,5 @@
 
-var scotchApp = angular.module('myApp', ['ngRoute']);
+var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
 
     // create the controller and inject Angular's $scope
 

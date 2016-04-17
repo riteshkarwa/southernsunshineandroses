@@ -1,8 +1,6 @@
 $(document).ready(function(){
-  $('.nav a').on('click', function(){
-    $('.navbar-toggle').click(function(e){
-        e.preventDefault();
-    }); //bootstrap 3.x by Richard
+  $('.navbar-nav').on('click', 'li a', function() {
+    $('.navbar-collapse').collapse('hide');
   });
 
 	$('#nav-wrapper').height($("#nav").height());
