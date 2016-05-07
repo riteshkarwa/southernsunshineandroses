@@ -85,6 +85,12 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
             url: "img/doggy_bed.jpg",
             title: "Adorable bed for your pet"
 
+        },
+        {
+            id: 6,
+            url: "img/breadbox.jpg",
+            title: "Cute bread box"
+
         }
       ]
 
