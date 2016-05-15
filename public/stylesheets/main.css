@@ -140,12 +140,12 @@
 }
 
 .logo {
-        display: block;
-        width: 310px;
-        height: 310px;
-        margin: 0 auto;
-        float: none;
-    }
+  display: block;
+  width: 410px;
+  height: 410px;
+  margin: 0 auto;
+  float: none;
+}
 
 .blog-text { 
 
