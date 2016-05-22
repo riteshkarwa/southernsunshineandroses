@@ -58,19 +58,19 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
       $scope.images = [
         {
             id: 1,
-            url: "img/frenchstand.jpeg",
+            url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463885824/frenchstand_dtiyhu.jpg",
             title: "French Provincial Night Stand"
 
         },
         {
             id: 2,
-            url: "img/stand.jpeg",
+            url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463882123/stand_mkbg5e.jpg",
             title: "Side Table For Sale"
 
         },
         {
             id: 3,
-            url: "img/midcentury.jpeg",
+            url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463885212/midcentury_kxvnrs.jpg",
             title: "Awesome Mid Century Table"
 
         },
