@@ -76,19 +76,19 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         },
         {
             id: 4,
-            url: "img/2tier.jpg",
+            url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463882173/2tier_b7e7x5.jpg",
             title: "Lovely two tiered French Provincial end table"
 
         },
         {
             id: 5,
-            url: "img/doggy_bed.jpg",
+            url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463882106/doggy_bed_u3jign.jpg",
             title: "Adorable bed for your pet"
 
         },
         {
             id: 6,
-            url: "img/breadbox.jpg",
+            url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463881943/breadbox_gxioq9.jpg",
             title: "Cute bread box"
 
         }
