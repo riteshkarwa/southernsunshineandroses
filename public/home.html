@@ -15,9 +15,32 @@
 </div>
 
 <style type="text/css">
+.img-circle {
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera */
+    animation: fadein 2.5s;
+}
+    
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 </style>
 <script type="text/javascript">
 $(".container").ready(function(){  
+    //lazy load images
+    $(function() {
+      $("img.lazy").lazyload();
+    });
+
     // $('p').sakura({
     //   s: ['blow-hard-left','blow-medium-right'],
     //   className: 'sakura',
