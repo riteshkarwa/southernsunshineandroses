@@ -91,6 +91,11 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
             url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463881943/breadbox_gxioq9.jpg",
             title: "Cute bread box"
 
+        },
+        {   
+            id:7,
+            url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1473479543/image_1_kzwonl.jpg",
+            title: "Piano bench to die for"
         }
       ]
 
