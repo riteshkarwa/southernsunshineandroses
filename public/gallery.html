@@ -13,7 +13,7 @@
 			<div class ="col-md-3 col-sm-3 col-xs-8 picture-container adjust-pic" ng-repeat="image in images">
 				<div class="picture-body">
 					<a href="{{image.url}}" data-title="{{image.title}}" data-lightbox="cool_images">
-						<img ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" />	
+						<img onload="fadeIn(this)" ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" />	
 					</a>				
 				</div>
 				<div class="picture-footer">
@@ -39,6 +39,10 @@
 <script type="text/javascript">
 
 	$(document).ready(function(){
+
+    window.fadeIn = function(obj) {
+    $(obj).fadeIn(1000);
+    }
 
 		var myDate = new Date();
     var hrs = myDate.getHours();
