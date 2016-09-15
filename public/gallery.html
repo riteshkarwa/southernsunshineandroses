@@ -86,15 +86,17 @@
 
 <script type="text/javascript">
 
-  $('.gallery').imagesLoaded()
-  .done( function( instance ) {
-    console.log('all images successfully loaded');
-  });
+
 	// $(document).ready(function(){
   //    window.fadeIn = function(obj) {
   //    $(obj).fadeIn(1000);
   //    }
   $(document).ready(function(){
+
+  $('.container').imagesLoaded()
+    .done( function( instance ) {
+      console.log('all images successfully loaded');
+    })
 		var myDate = new Date();
     var hrs = myDate.getHours();
     var greet;
