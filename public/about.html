@@ -23,7 +23,7 @@
 			<figure>
 			<!--<figure class="embed reveal embed dark medium">-->
 				<a href="#">
-					<img src="img/chalk.jpeg" alt="Annie Sloan Chalk Paint" height="200px" width="300px" class="img-responsive">
+					<img onload="fadeIn(this)" src="img/chalk.jpeg" alt="Annie Sloan Chalk Paint" height="200px" width="300px" class="img-responsive" style="display:none;">
 					<figcaption>
 						Annie Sloan Chalk Paint
 					</figcaption>
@@ -35,7 +35,7 @@
 			<figure class="right-tape">	
 			<!--<figure class="embed reveal embed dark medium">-->
 				<a href="#">
-					<img src="img/make-up.jpeg" alt="make-up kit" height="200px" width="300px" class="img-responsive">
+					<img onload="fadeIn(this)" src="img/make-up.jpeg" alt="make-up kit" height="200px" width="300px" class="img-responsive" style="display:none;">
 					<figcaption>
 						Beauty Pile
 					</figcaption>
@@ -47,7 +47,7 @@
 			<figure>
 			<!--<figure class="embed reveal embed dark medium">-->
 				<a href="#" >
-					<img src="img/yoga.jpg" alt="yoga at sunshine" height="200px" width="300px" class="img-responsive">
+					<img onload="fadeIn(this)" src="img/yoga.jpg" alt="yoga at sunshine" height="200px" width="300px" class="img-responsive" style="display:none;">
 					<figcaption>
 						Yoga Time
 					</figcaption>
@@ -56,3 +56,13 @@
 		</div>
 	</div>
 </div>
+
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+    window.fadeIn = function(obj) {
+    $(obj).fadeIn(1000);
+    }
+</script>
