@@ -13,7 +13,8 @@
 			<div class ="col-md-3 col-sm-3 col-xs-8 picture-container adjust-pic" ng-repeat="image in images">
 				<div class="picture-body">
 					<a href="{{image.url}}" data-title="{{image.title}}" data-lightbox="cool_images">
-						<img onload="fadeIn(this)" ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" style="display:none;"/>	
+						<!--<img onload="fadeIn(this)" ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" style="display:none;"/>-->
+            <img ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" class="fadein_image"/> 
 					</a>				
 				</div>
 				<div class="picture-footer">
@@ -44,15 +45,54 @@
     position: relative;
     top: 0px;
   }
+
+  .fadein_image {
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera */
+    animation: fadein 2.5s;
+}
+    
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Firefox */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari and Chrome */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }​
+
+  /* Opera */
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
 </style>
 <script type="text/javascript">
 
-	$(document).ready(function(){
-
-    
-    window.fadeIn = function(obj) {
-    $(obj).fadeIn(1000);
-    }
+  $('#container').imagesLoaded()
+  .done( function( instance ) {
+    console.log('all images successfully loaded');
+  })
+	// $(document).ready(function(){
+  //    window.fadeIn = function(obj) {
+  //    $(obj).fadeIn(1000);
+  //    }
 
 		var myDate = new Date();
     var hrs = myDate.getHours();
@@ -69,5 +109,6 @@
     $(".alex_brush_font").prepend(greet+", ");
 	});
 </script>
+
 
 
