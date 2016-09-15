@@ -59,9 +59,11 @@
 
 
 <script type="text/javascript">
-	$('.container').imagesLoaded()
-  .done( function( instance ) {
-    console.log('all images successfully loaded');
+	$(document).ready(function(){
+		$('.container').imagesLoaded()
+  	.done( function( instance ) {
+    	console.log('all images successfully loaded');
+ 	 });
   });
 /*
 	$(document).ready(function(){
