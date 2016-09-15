@@ -85,15 +85,15 @@
 </style>
 <script type="text/javascript">
 
-  $('#container').imagesLoaded()
+  $('.container').imagesLoaded()
   .done( function( instance ) {
     console.log('all images successfully loaded');
-  })
+  });
 	// $(document).ready(function(){
   //    window.fadeIn = function(obj) {
   //    $(obj).fadeIn(1000);
   //    }
-
+  $(document).ready(function(){
 		var myDate = new Date();
     var hrs = myDate.getHours();
     var greet;
