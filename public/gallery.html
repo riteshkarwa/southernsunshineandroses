@@ -92,10 +92,23 @@
   //    $(obj).fadeIn(1000);
   //    }
   $(document).ready(function(){
-
+    /*
     $('.picture-container').imagesLoaded()
     .done( function( instance ) {
       console.log('all images successfully loaded');
+    });
+    */
+    $(".fadein_image").each(function() {
+        var src = $(this).data("src");
+        if (src) {
+            var img = new Image();
+            img.style.display = "none";
+            img.onload = function() {
+                $(this).fadeIn(1000);
+            };
+            $(this).append(img);            
+            img.src = src;
+        }
     });
 		var myDate = new Date();
     var hrs = myDate.getHours();
