@@ -136,7 +136,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
                 $http.put('/api/update_likes/' + image.id, {likes:image.likes})
                     .success(function(data) {
                     $scope.todoData = data;
-                    console.log(data);
+                    //console.log(data);
                 })
                 .error(function(data) {
                     console.log('Error: ' + data);
