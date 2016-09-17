@@ -112,7 +112,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
                 })
             })
 
-            console.log($scope.images);
+            //console.log($scope.images);
         }).error(function(error) {
             console.log('Error: ' + error);
         });
