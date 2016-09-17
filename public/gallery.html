@@ -12,9 +12,9 @@
 		<div class="row">
 			<div class ="col-md-3 col-sm-3 col-xs-8 picture-container adjust-pic" ng-repeat="image in images">
 				<div class="picture-body">
-					<a href="{{image.url}}" data-title="{{image.title}}" data-lightbox="cool_images">
+					<a href="{{image.url}}" data-title="{{image.title}}" data-lightbox="cool_images" class="fadein_image">
 						<!--<img onload="fadeIn(this)" ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" style="display:none;"/>-->
-            <img ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px"/> 
+            <img ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" class="fadein_image"/> 
 					</a>				
 				</div>
 				<div class="picture-footer">
@@ -46,13 +46,41 @@
     top: 0px;
   }
 
-  img {
-    opacity: 1;
-    transition: opacity 0.3s;
+  .fadein_image {
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera */
+    animation: fadein 2.5s;
+}
+    
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
   }
 
-  img[ng-src] {
-    opacity: 0;
+  /* Firefox */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari and Chrome */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }​
+
+  /* Opera */
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
   }
 </style>
 
@@ -64,20 +92,11 @@
   //    $(obj).fadeIn(1000);
   //    }
   $(document).ready(function(){
-    [].forEach.call(document.querySelectorAll('img[ng-src]'), function(img) {
-    img.setAttribute('src', img.getAttribute('ng-src'));
-    img.onload = function() {
-      img.removeAttribute('ng-src');
-      };
-    });
 
-    /*
     $('.picture-container').imagesLoaded()
     .done( function( instance ) {
       console.log('all images successfully loaded');
     });
-    */
-
 		var myDate = new Date();
     var hrs = myDate.getHours();
     var greet;
