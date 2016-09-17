@@ -201,6 +201,7 @@
 .img-class{
   margin-left: 15px;
   margin-top: 10px;
+  margin-bottom: 8px;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
