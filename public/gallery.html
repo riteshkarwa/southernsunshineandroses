@@ -12,7 +12,7 @@
 		<div class="row">
 			<div class ="col-md-3 col-sm-3 col-xs-8 picture-container adjust-pic" ng-repeat="image in images">
 				<div class="picture-body">
-					<a href="{{image.url}}" data-title="{{image.title}}" data-lightbox="cool_images">
+					<a data-original="{{image.url}}" data-title="{{image.title}}" data-lightbox="cool_images">
 						<!--<img onload="fadeIn(this)" ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" style="display:none;"/>-->
             <img ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" class="fadein_image"/> 
 					</a>				
@@ -45,43 +45,6 @@
     position: relative;
     top: 0px;
   }
-
-  .fadein_image {
-    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
-    -moz-animation: fadein 2.5s; /* Firefox */
-    -ms-animation: fadein 2.5s; /* Internet Explorer */
-    -o-animation: fadein 2.5s; /* Opera */
-    animation: fadein 2.5s;
-}
-    
-  @keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }
-
-  /* Firefox */
-  @-moz-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }
-
-  /* Safari and Chrome */
-  @-webkit-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }
-
-  /* Internet Explorer */
-  @-ms-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }​
-
-  /* Opera */
-  @-o-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }
 </style>
 
 <script type="text/javascript">
@@ -92,10 +55,17 @@
   //    $(obj).fadeIn(1000);
   //    }
   $(document).ready(function(){
-
-  $('.picture-container').imagesLoaded()
+    /*
+    $('.picture-container').imagesLoaded()
     .done( function( instance ) {
       console.log('all images successfully loaded');
+    });
+    */
+    //lazy load images
+    $(function() {
+      $(".picture-body").lazyload({
+        effect : "fadeIn"
+      });
     });
 		var myDate = new Date();
     var hrs = myDate.getHours();
