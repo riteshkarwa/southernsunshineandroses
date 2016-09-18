@@ -55,26 +55,25 @@
   $(document).ready(function(){
     
     $('.picture-container').imagesLoaded()
-    .done( function( instance ) {
+    .done( function(instance) {
+      $(".picture-body a").delay(1000).animate({ opacity: 1 }, 700);​
       console.log('all images successfully loaded');
     });
-
-    $(".picture-body").delay(1000).animate({ opacity: 1 }, 700);​
     
-    /*
-    $(".fadein_image").each(function() {
-        var src = $(this).data("src");
-        if (src) {
-            var img = new Image();
-            img.style.display = "none";
-            img.onload = function() {
-                $(this).fadeIn(1000);
-            };
-            $(this).append(img);            
-            img.src = src;
-        }
-    });
-    */
+
+    // $(".fadein_image").each(function() {
+    //     var src = $(this).data("src");
+    //     if (src) {
+    //         var img = new Image();
+    //         img.style.display = "none";
+    //         img.onload = function() {
+    //             $(this).fadeIn(1000);
+    //         };
+    //         $(this).append(img);            
+    //         img.src = src;
+    //     }
+    // });
+
 		var myDate = new Date();
     var hrs = myDate.getHours();
     var greet;
