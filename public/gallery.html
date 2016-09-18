@@ -60,14 +60,15 @@
         img.hide();
         img.each(function(i) {
         if (this.complete) {
+            console.log("if block");
             $(this).fadeIn(1000);
         } else {
             console.log("in else");
             $(this).load(function() {
                 $(this).fadeIn(1000);
             });
-        }
-      });
+          }
+        });
     });
     
 		var myDate = new Date();
