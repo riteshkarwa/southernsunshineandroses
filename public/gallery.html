@@ -12,7 +12,7 @@
 		<div class="row">
 			<div class ="col-md-3 col-sm-3 col-xs-8 picture-container adjust-pic" ng-repeat="image in images">
 				<div class="picture-body">
-					<a href="{{image.url}}" data-title="{{image.title}}" data-lightbox="cool_images" class="fadein_image">
+					<a href="{{image.url}}" data-title="{{image.title}}" data-lightbox="cool_images">
 						<!--<img onload="fadeIn(this)" ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px" style="display:none;"/>-->
             <img ng-src="{{image.url}}" vspace="10" class="img-responsive" height="200px"/> 
 					</a>				
@@ -45,35 +45,66 @@
     position: relative;
     top: 0px;
   }
-  .picture-body a {
-    opacity: 0;
+
+  .fadein_image {
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -ms-animation: fadein 2.5s; /* Internet Explorer */
+    -o-animation: fadein 2.5s; /* Opera */
+    animation: fadein 2.5s;
+}
+    
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Firefox */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari and Chrome */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }​
+
+  /* Opera */
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
   }
 </style>
 
 <script type="text/javascript">
 
+
   $(document).ready(function(){
     
-    $('.picture-container').imagesLoaded()
-    .done( function(instance) {
-      $(".picture-body a").delay(1000).animate({ opacity: 1 }, 700)
+    $('container').imagesLoaded()
+    .done( function( instance ) {
       console.log('all images successfully loaded');
+      var img = $('.picture-container').find('img')
+        img.each(function(i) {
+        if (this.complete) {
+            $(this).delay(1000).fadeIn(700);
+        } else {
+            console.log("in else");
+            $(this).load(function() {
+                $(this).fadeIn(700);
+            });
+        }
+      });
     });
     
-
-    // $(".fadein_image").each(function() {
-    //     var src = $(this).data("src");
-    //     if (src) {
-    //         var img = new Image();
-    //         img.style.display = "none";
-    //         img.onload = function() {
-    //             $(this).fadeIn(1000);
-    //         };
-    //         $(this).append(img);            
-    //         img.src = src;
-    //     }
-    // });
-
 		var myDate = new Date();
     var hrs = myDate.getHours();
     var greet;
