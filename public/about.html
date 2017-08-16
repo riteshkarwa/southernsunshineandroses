@@ -58,57 +58,28 @@
 </div>
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('.container').imagesLoaded()
-  	.done( function( instance ) {
-    	console.log('all images successfully loaded');
- 	 });
-  });
-/*
-	$(document).ready(function(){
-
+  $(document).ready(function(){
+    // $('.container').imagesLoaded()
+    // .done( function( instance ) {
+    //   console.log('all images successfully loaded');
+    // });
     window.fadeIn = function(obj) {
-    $(obj).fadeIn(1000);
+      $(obj).fadeIn(1000);
     }
-*/
+
+    $(".ignore-click").click(function(){
+        return false;
+    });
+  });
 </script>
 
 <style type="text/css">
-.fadein_image {
-    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
-    -moz-animation: fadein 2.5s; /* Firefox */
-    -ms-animation: fadein 2.5s; /* Internet Explorer */
-    -o-animation: fadein 2.5s; /* Opera */
-    animation: fadein 2.5s;
-}
-    
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 
-/* Firefox */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+a:hover{
+  cursor:default;
 }
-
-/* Safari and Chrome */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}​
-
-/* Opera */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.fadein_image{ 
+    display:none;
 }
 
 </style>
