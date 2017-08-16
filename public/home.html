@@ -28,41 +28,12 @@ $(document).ready(function(){
     //     effect : "fadeIn"
     //   });
     // });
-
-  (function ($) {
-    var cache = [];
-    // Arguments are image paths relative to the current page.
-    $.preLoadImages = function () {
-        var promises = [];
-        var args_len = arguments.length;
-        for (var i = args_len; i--;) {
-            var cacheImage = document.createElement('img');
-            var promise = new $.Deferred();
-            cacheImage,onload = promise.resolve;
-            promise.resolve();
-            promises.push(promise);
-            cacheImage.src = arguments[i];
-            cache.push(cacheImage);
-
-        }
-        console.log(promises);
-        return promises;
+    // this function must be defined in the global scope
+    window.fadeIn = function(obj) {
+      $(obj).fadeIn(1000);
     }
-  })(jQuery)
-  jQuery.when(jQuery.preLoadImages("https://res.cloudinary.com/dkjcddqy0/image/upload/v1463881077/paint_me9sgu.jpg")).done(function () {
-    jQuery('.img-circle').fadeIn(2000);
-  });
 
-    // $('p').sakura({
-    //   s: ['blow-hard-left','blow-medium-right'],
-    //   className: 'sakura',
-    //   fallSpeed: 5,
-    //   newOn: 500,
-    //   swayAnimations:['sway-7'] 
-    // });
-    /*
-    var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(256 * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-    */
+    
      //var colors=["red","orange","blue","#FFE303", "green" ,"#4b0082", "#9B30FF"];
      var colors = ["#ff3322", "#D1010A", "#e64500","#990012","##990000","#a40000", "#FFA500","#ff8d00","#ff8100","#9C134F","#fd6804","#fd6804","#830808","#9B111E","#E91E63","#a50b5e","#c40000","#b22400"];
      var random_color= colors[Math.floor(Math.random() * colors.length)];
