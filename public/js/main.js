@@ -96,6 +96,11 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
             id:7,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1473479543/image_1_kzwonl.jpg",
             title: "Piano bench to die for"
+        },
+        {
+            id:8,
+            url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1480115054/coffee_table_fpbrud.jpg",
+            title: "Lovely and Drinkable Coffee Table"
         }
       ]
 
