@@ -101,6 +101,11 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
             id:8,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1480115054/coffee_table_fpbrud.jpg",
             title: "Lovely and Drinkable Coffee Table"
+        },
+        {
+            id:9,
+            url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1511933009/24251248_10211316135001007_1093863881_o_ezqau5.jpg",
+            title: "Prayer Table"
         }
       ]
 
