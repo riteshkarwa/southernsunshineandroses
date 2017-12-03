@@ -8,7 +8,7 @@
 */
 
 /* DEMO-SPECIFIC STYLES */
-.typewriter p {
+.typewriter h1 {
   display: flex;
   justify-content: center;
   font-family: monospace;
