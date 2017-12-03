@@ -30,6 +30,10 @@
     font-weight: bold;
   }
 
+  .footer_text{
+  font-size: 12px;
+}
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -320,7 +324,7 @@ figure {
 */
 
 .footer_text{
-  font-size: 13px;
+  font-size: 14px;
 }
 
 figcaption { 
