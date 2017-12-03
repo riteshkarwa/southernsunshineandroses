@@ -9,6 +9,7 @@
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter p {
+  font-family: 'Alex Brush', cursive;
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
