@@ -58,40 +58,40 @@
 
   }
 
-  @media screen and (min-width: 900px) and (max-width: 1200px) {
-    .alex_brush_font{
-      font-family: 'Alex Brush', cursive;
-      font-size: 3em;
-    }
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .alex_brush_font{
+    font-family: 'Alex Brush', cursive;
+    font-size: 3em;
   }
+}
 
-  .img-responsive{
-    margin: 1px;
-    padding: 5px;
-  }
+.img-responsive{
+  margin: 1px;
+  padding: 5px;
+}
 
-  .likes_count{
-    margin-right: 7px;
-    position: relative;
-    top: -2px;
-  }
+.likes_count{
+  margin-right: 7px;
+  position: relative;
+  top: -2px;
+}
 
-  .adjust-pic{
-    margin-top: 10px;
-    margin-bottom: 15px;
-  }
-  .picture-body {
-    border: 1px solid lightgray;
-    border-radius: 6px 6px 0px 0px;
-    padding: 4px ;
-    border-bottom: 0px;
-  }
-  .picture-footer {
-    border: 1px solid lightgray;
-    border-radius: 0px 0px 6px 6px;
-    padding: 5px;
-    padding-left: 16px;
-  }
+.adjust-pic{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.picture-body {
+  border: 1px solid lightgray;
+  border-radius: 6px 6px 0px 0px;
+  padding: 4px ;
+  border-bottom: 0px;
+}
+.picture-footer {
+  border: 1px solid lightgray;
+  border-radius: 0px 0px 6px 6px;
+  padding: 5px;
+  padding-left: 16px;
+}
 
 #nav.affix {
    position: fixed;
@@ -143,9 +143,11 @@
   float: none;
 }
 
+@font-face { font-family: Whitney Medium; src: url('/stylesheets/Whitney Medium.ttf'); } 
+      
 .blog-text { 
 
-  font-family: 'Antic', sans-serif;
+  font-family: 'Whitney Medium', sans-serif;
   font-size: 30px;
   font-weight: bold;
 
