@@ -9,6 +9,8 @@
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter p {
+  display: flex;
+  justify-content: center;
   /*font-family: monospace;*/
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
