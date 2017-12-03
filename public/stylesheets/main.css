@@ -142,10 +142,6 @@
   margin: 0 auto;
   float: none;
 }
-
-@font-face { 
-  font-family: Whitney Medium; src: url('/stylesheets/Whitney Medium.ttf'); 
-} 
       
 .blog-text { 
 
