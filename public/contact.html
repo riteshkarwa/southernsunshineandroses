@@ -50,7 +50,7 @@ $(document).ready(function(){
       subject= $('#subject').val();
       email = $('#email').val();
       text = $('#message').val();
-      $.post("https://southernsunshineandroses.com/send", {name:name,email:email,subject:subject, text:text}, function(data){   
+      $.post("https://damp-springs-4092.herokuapp.com/send", {name:name,email:email,subject:subject, text:text}, function(data){   
         if(data=="sent")
         {
           $("#send_message").text("Message has been sent. Thank you for the feedback");
