@@ -15,8 +15,10 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
   auth: {
     user: "ssrfelter@gmail.com",
     pass: "19august"
-  ßßß}
+  }
 });
+
+console.log('SMTP Configured');
 
 /*------------------Routing Started ------------------------*/
 
