@@ -11,11 +11,11 @@ Here we are configuring our SMTP Server details.
 STMP is mail server which is responsible for sending and recieving email.
 */
 var smtpTransport = nodemailer.createTransport("SMTP",{
-service: "Gmail",
-auth: {
-user: "ssrfelter@gmail.com",
-pass: "19august"
-}
+  service: "Gmail",
+  auth: {
+    user: "ssrfelter@gmail.com",
+    pass: "19august"
+  ßßß}
 });
 
 /*------------------Routing Started ------------------------*/
