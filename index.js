@@ -11,9 +11,7 @@ Here we are configuring our SMTP Server details.
 STMP is mail server which is responsible for sending and recieving email.
 */
 var smtpTransport = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
+  service: 'Gmail',
   auth: {
     user: "ssrfelter@gmail.com",
     pass: "19august"
