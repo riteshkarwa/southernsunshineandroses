@@ -3,6 +3,7 @@ var nodemailer = require("nodemailer");
 var bodyParser = require("body-parser");
 var app = express();
 var pg = require('pg');
+var cors = require('cors')
 var conString = process.env.DATABASE_URL || "postgres://gjdkdyoccbwtvd:t6zJ6YxmYvsXvShSi-wLVXT5es@ec2-107-21-106-196.compute-1.amazonaws.com:5432/d2lnocf9vtp4rq";
 //var conString = process.env.DATABASE_URL || "postgres://localhost:5432/testdb";
 
@@ -24,7 +25,8 @@ console.log('SMTP Configured');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
-
+/*enable CORS*/
+app.use(cors())
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
