@@ -431,6 +431,9 @@ p {
     margin: 0 0 1em;
 }
 
+.typewriter-p-tag {
+   margin: 0 0 0em;
+}
 .comment {
     overflow: hidden;
     padding: 0 0 1em;
