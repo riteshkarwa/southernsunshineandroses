@@ -11,7 +11,7 @@ var conString = process.env.DATABASE_URL || "postgres://gjdkdyoccbwtvd:t6zJ6YxmY
 Here we are configuring our SMTP Server details.
 STMP is mail server which is responsible for sending and recieving email.
 */
-var smtpTransport = nodemailer.createTransport({
+var smtpTransport = nodemailer.createTransport("STMP",{
   service: 'Gmail',
   auth: {
     user: "ssrfelter@gmail.com",
