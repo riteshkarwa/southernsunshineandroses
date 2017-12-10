@@ -109,7 +109,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         },
         {
             id:10,
-            url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1512876999/25130167_10211396784617197_703632566_o_gamswx.jpg",
+            url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1512877562/25271168_10211397273069408_908349805_o_mklamj.jpg",
             title: "Solid Cherry Night Stands"
         }
       ]
