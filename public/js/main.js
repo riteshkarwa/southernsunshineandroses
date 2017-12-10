@@ -106,6 +106,11 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
             id:9,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1511933009/24251248_10211316135001007_1093863881_o_ezqau5.jpg",
             title: "Prayer Table"
+        },
+        {
+            id:10
+            url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1512876034/25139095_10211396786417242_1175081066_o_pbw6el.jpg"
+            title: "Solid Cherry Night Stands"
         }
       ]
 
