@@ -77,7 +77,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id: 4,
             url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1474155614/2tier_oldgo9.jpg",
-            title: "Lovely two tiered French Provincial end table"
+            title: "Lovely two tiered French Provincial end table For Sale"
 
         },
         {
