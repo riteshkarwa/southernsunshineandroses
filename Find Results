@@ -1,0 +1,10 @@
+Searching 1924 files for "fa fa-facebook fa-2x"
+
+/Users/riteshkarwa/damp-springs-4092/public/index1.html:
+   97      		<div class="navbar-text pull-right footer-social">
+   98            <a href="https://www.etsy.com/shop/SouthernSunshineRose" target="_blank"><i class="fa fa-etsy fa-2x"></i></a>
+   99:     			<a href="https://www.facebook.com/southernsunshineandroses/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+  100      			<a href="https://www.pinterest.com/southernsunshineandroses/" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
+  101      		</div>
+
+1 match in 1 file
