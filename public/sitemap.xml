@@ -9,8 +9,10 @@
 
   <url>
     <loc>http://www.southernsunshineandroses.com/</loc>
-    <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1510632650/23600973_10211213494155050_426846348_o_ayaa32.jpg</image:loc>
-    <image:caption>Southern Sunshine and Roses</image:caption>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1510632650/23600973_10211213494155050_426846348_o_ayaa32.jpg</image:loc>
+      <image:caption>Southern Sunshine and Roses</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>http://www.southernsunshineandroses.com/#/gallery</loc>
