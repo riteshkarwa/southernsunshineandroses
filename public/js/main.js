@@ -111,6 +111,11 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
             id:10,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/q_100/v1512889763/25198672_10211398496099983_340813110_o_k5fxgk.jpg",
             title: "Solid Cherry Night Stands"
+        },
+        {
+            id:11,
+            url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1524437998/31166904_10212423764531053_3514226770838552576_n_osyrmh.jpg",
+            title: "Solid wood desk"
         }
       ]
 
