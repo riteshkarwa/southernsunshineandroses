@@ -55,15 +55,12 @@
     
     $('container').imagesLoaded()
     .done( function( instance ) {
-      console.log('all images successfully loaded');
       var img = $('.picture-container').find('img');
         img.hide();
         img.each(function(i) {
         if (this.complete) {
-            console.log("if block");
             $(this).fadeIn(1000);
         } else {
-            console.log("in else");
             $(this).load(function() {
                 $(this).fadeIn(1000);
             });
