@@ -1,7 +1,8 @@
 <div class="container">
   <p class="blog-text add-color">
     Welcome to Southern Sunshine and Roses. Thank you very much for stopping by, the website is a work in progress so any improvement tips are always welcomed. Head over to the about page to find more about me. I "refresh" furniture, find worn out, outdated wooden furniture and use decorative paint, woodworking skills and finishing techniques to transform them into beautiful masterpieces. Do check out my work, I have uploaded pictures of my work in the gallery section. We are constantly striving to update and make the website easier to use. I would love to get your feedback as I am just starting out on my new adventure. If you have any questions and concerns, shoot me a message on Facebook.
-    <div class="typewriter add-color blog-text">
+    <!--<div id="typewriter_id" class="typewriter add-color blog-text"> -->
+    <div id="typewriter_id" class="add-color blog-text">
       <p>Yours &nbsp;truly,</p> 
     </div>
   </p>
@@ -25,13 +26,31 @@
 
 <script type="text/javascript">
 $(document).ready(function(){  
-    //lazy load images
-    // $(function() {
-    //   $(".img-circle").lazyload({
-    //     effect : "fadeIn"
-    //   });
-    // });
-    // this function must be defined in the global scope
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+    if($(window).width() > 739) {      
+      //Add your javascript for large screens here
+      $('#typewriter_id').addClass('typewriter')
+    } 
+    else {
+      //Add your javascript for small screens here 
+      $(window).scroll(function(){
+
+        if (isScrolledIntoView('#typewriter_id') === true) {
+            $('#typewriter_id').addClass('typewriter')
+        }
+
+      });
+    }
+
     window.fadeIn = function(obj) {
       $(obj).fadeIn(1000);
     }
