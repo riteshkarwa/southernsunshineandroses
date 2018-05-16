@@ -5,6 +5,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
 
 		// configure our routes
         scotchApp.config(function($routeProvider) {
+        $routeProvider.html5Mode(true);
         $routeProvider
 
             // route for the home page
