@@ -4,7 +4,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
     // create the controller and inject Angular's $scope
 
 		// configure our routes
-        scotchApp.config(function($routeProvider) {
+        scotchApp.config(function($routeProvider, $locationProvider) {
         $routeProvider
 
             // route for the home page
@@ -36,6 +36,9 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
                 templateUrl : 'gallery.html',
                 controller  : 'galleryController'
             });
+
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true);
     });
 
     // create the controller and inject Angular's $scope
