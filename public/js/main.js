@@ -108,7 +108,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id:9,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1511933009/24251248_10211316135001007_1093863881_o_ezqau5.jpg",
-            title: "Cute Prayer/Dinning Table"
+            title: "Radiant Prayer/Dinning Table"
         },
         {
             id:10,
