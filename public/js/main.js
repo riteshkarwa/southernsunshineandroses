@@ -80,30 +80,30 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id: 4,
             url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1474155614/2tier_oldgo9.jpg",
-            title: "Lovely two tiered French Provincial end table For Sale"
+            title: "Two Tiered French Provincial End Table"
 
         },
         {
             id: 5,
             url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463882106/doggy_bed_u3jign.jpg",
-            title: "Adorable bed for your pet"
+            title: "Adorable Doggy Bed"
 
         },
         {
             id: 6,
             url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463881943/breadbox_gxioq9.jpg",
-            title: "Cute bread box"
+            title: "Cute Bread Box"
 
         },
         {   
             id:7,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1473479543/image_1_kzwonl.jpg",
-            title: "Piano bench to die for"
+            title: "Piano Bench"
         },
         {
             id:8,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1480115054/coffee_table_fpbrud.jpg",
-            title: "Lovely Coffee Table"
+            title: "Beautiful Coffee Table"
         },
         {
             id:9,
@@ -118,7 +118,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id:11,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1524437998/31166904_10212423764531053_3514226770838552576_n_osyrmh.jpg",
-            title: "Solid wood desk"
+            title: "Solid Wood Study Table"
         }
       ]
 
