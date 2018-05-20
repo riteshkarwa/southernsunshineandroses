@@ -47,7 +47,7 @@ app.get('/', function(request, response) {
 });
 */
 
-app.get('/*', function(request, response) {
+app.get('/', function(request, response) {
   //response.render('pages/index');
   response.sendFile(__dirname +'/public/index1.html');
 });
