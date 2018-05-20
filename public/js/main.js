@@ -68,7 +68,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id: 2,
             url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463882123/stand_mkbg5e.jpg",
-            title: "Side Table For Sale"
+            title: "Adorable Side Table"
 
         },
         {
