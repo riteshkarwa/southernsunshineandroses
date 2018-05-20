@@ -15,14 +15,14 @@
     </image:image>
   </url>
   <url>
-    <loc>http://www.southernsunshineandroses.com/#/gallery</loc>
+    <loc>http://www.southernsunshineandroses.com/gallery</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1463885824/frenchstand_dtiyhu.jpg</image:loc>
       <image:caption>French Provincial Night Stand</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1463882123/stand_mkbg5e.jpg</image:loc>
-      <image:caption>Side Table For Sale</image:caption>
+      <image:caption>Side Table</image:caption>
     </image:image> 
     <image:image>   
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1463885212/midcentury_kxvnrs.jpg</image:loc>
@@ -30,19 +30,19 @@
     </image:image>
     <image:image>  
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1474155614/2tier_oldgo9.jpg</image:loc>
-      <image:caption>Lovely two tiered French Provincial end table For Sale</image:caption>
+      <image:caption>French Provincial End Table</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1463882106/doggy_bed_u3jign.jpg</image:loc>
-      <image:caption>Adorable bed for your pet</image:caption>
+      <image:caption>Lovely Doggy Bed</image:caption>
     </image:image>  
     <image:image>  
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1463881943/breadbox_gxioq9.jpg</image:loc>
-      <image:caption>Cute bread box</image:caption>
+      <image:caption>Adorable Bread Box</image:caption>
     </image:image>    
     <image:image>   
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1473479543/image_1_kzwonl.jpg</image:loc>
-      <image:caption>Piano bench to die for</image:caption>
+      <image:caption>Piano Bench</image:caption>
     </image:image>
     <image:image>   
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1480115054/coffee_table_fpbrud.jpg</image:loc>
@@ -50,7 +50,7 @@
     </image:image>
     <image:image> 
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1511933009/24251248_10211316135001007_1093863881_o_ezqau5.jpg</image:loc>
-      <image:caption>Prayer Table</image:caption>
+      <image:caption>Cute Prayer Table</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1524437998/31166904_10212423764531053_3514226770838552576_n_osyrmh.jpg"</image:loc>
@@ -58,13 +58,13 @@
     </image:image>
   </url>
   <url>
-    <loc>http://www.southernsunshineandroses.com/#/about</loc>
+    <loc>http://www.southernsunshineandroses.com/about</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1465082221/photo_y3c3bb.jpg</image:loc>
       <image:caption>Chelsea Felter</image:caption>
     </image:image>  
   </url>
   <url>
-    <loc>http://www.southernsunshineandroses.com/#/contact</loc>
+    <loc>http://www.southernsunshineandroses.com/contact</loc>
   </url>
 </urlset>
