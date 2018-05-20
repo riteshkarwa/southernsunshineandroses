@@ -92,7 +92,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id: 6,
             url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463881943/breadbox_gxioq9.jpg",
-            title: "Cute Bread Box"
+            title: "Bread Box"
 
         },
         {   
