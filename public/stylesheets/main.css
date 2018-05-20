@@ -75,6 +75,13 @@
 }
 
 .likes_count{
+  font-family: 'Alex Brush', cursive;
+  margin-right: 7px;
+  position: relative;
+  top: -2px;
+}
+
+.gallery_image_title{
   margin-right: 7px;
   position: relative;
   top: -2px;
