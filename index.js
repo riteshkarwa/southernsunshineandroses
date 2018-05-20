@@ -47,11 +47,6 @@ app.get('/', function(request, response) {
 });
 */
 
-app.get('/', function(request, response) {
-  //response.render('pages/index');
-  response.sendFile(__dirname +'/public/index1.html');
-});
-
 app.post('/send', function(req, res){
   console.log("in mail controller");
   var mailOptions={
@@ -142,6 +137,11 @@ app.put('/api/update_likes/:likes_id', function(req, res) {
             return res.json(results);
         });
     });
+});
+
+app.get('*', function(request, response) {
+  //response.render('pages/index');
+  response.sendFile(__dirname +'/public/index1.html');
 });
 
 app.listen(app.get('port'), function() {
