@@ -108,7 +108,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id:9,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1511933009/24251248_10211316135001007_1093863881_o_ezqau5.jpg",
-            title: "Prayer Table"
+            title: "Cute Prayer/Dinning Table"
         },
         {
             id:10,
@@ -118,7 +118,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id:11,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1524437998/31166904_10212423764531053_3514226770838552576_n_osyrmh.jpg",
-            title: "Solid Wood Study Table"
+            title: "Solid Wood Study/Work Table"
         }
       ]
 
