@@ -80,13 +80,13 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id: 4,
             url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1474155614/2tier_oldgo9.jpg",
-            title: "Two Tiered French Provincial End Table"
+            title: "French Provincial End Table"
 
         },
         {
             id: 5,
             url: "https://res.cloudinary.com/dkjcddqy0/image/upload/v1463882106/doggy_bed_u3jign.jpg",
-            title: "Adorable Doggy Bed"
+            title: "Doggy Bed"
 
         },
         {
@@ -103,7 +103,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id:8,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1480115054/coffee_table_fpbrud.jpg",
-            title: "Beautiful Coffee Table"
+            title: "Coffee Table"
         },
         {
             id:9,
