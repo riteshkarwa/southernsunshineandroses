@@ -37,7 +37,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
                 controller  : 'galleryController'
             })
             // route for the terms of use page
-            when('/terms', {
+            .when('/terms', {
                 templateUrl : 'terms.html',
                 controller  : 'termsController'
             });
