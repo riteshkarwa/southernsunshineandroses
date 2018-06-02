@@ -60,6 +60,10 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         $scope.message = 'Look! I am a blog page.';
     });
 
+    scotchApp.controller('termsController', function($scope) {
+        $scope.message = 'Look! I am a terms of use page.';
+    });
+
     scotchApp.controller('galleryController', function($scope,$http) {
       $scope.counts = [];
 
