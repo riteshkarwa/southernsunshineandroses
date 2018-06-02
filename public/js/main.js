@@ -35,6 +35,11 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
             .when('/gallery', {
                 templateUrl : 'gallery.html',
                 controller  : 'galleryController'
+            })
+            // route for the terms of use page
+            when('/terms', {
+                templateUrl : 'terms.html',
+                controller  : 'termsController'
             });
 
         // use the HTML5 History API
