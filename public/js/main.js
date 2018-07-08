@@ -132,7 +132,7 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
         {
             id:12,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1531019940/36772328_10212926705784270_2315435320453103616_n_cgn34y.jpg",
-            title: "Solid Wood Uphostered Bench"
+            title: "Uphostered Bench"
         }
       ]
 
