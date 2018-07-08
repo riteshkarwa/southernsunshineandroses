@@ -128,6 +128,11 @@ var scotchApp = angular.module('myApp', ['ngRoute','ui.bootstrap']);
             id:11,
             url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1524437998/31166904_10212423764531053_3514226770838552576_n_osyrmh.jpg",
             title: "Solid Wood Study/Work Table"
+        },
+        {
+            id:12,
+            url:"https://res.cloudinary.com/dkjcddqy0/image/upload/v1531019940/36772328_10212926705784270_2315435320453103616_n_cgn34y.jpg",
+            title: "Solid Wood Uphostered Bench"
         }
       ]
 
