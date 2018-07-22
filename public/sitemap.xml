@@ -51,14 +51,17 @@
     <image:image> 
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1511933009/24251248_10211316135001007_1093863881_o_ezqau5.jpg</image:loc>
       <image:caption>Radiant Prayer Table</image:caption>
+      <image:title>Radiant Prayer Table</image:title>
     </image:image>
     <image:image>
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1524437998/31166904_10212423764531053_3514226770838552576_n_osyrmh.jpg</image:loc>
       <image:caption>Solid Wood Desk</image:caption>
+      <image:title>Solid Wood Desk</image:title>
     </image:image>
     <image:image>
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1531019940/36772328_10212926705784270_2315435320453103616_n_cgn34y.jpg</image:loc>
       <image:caption>Upholstered Bench</image:caption>
+      <image:title>Upholstered Bench</image:title>
     </image:image>
   </url>
   <url>
@@ -66,6 +69,7 @@
     <image:image>
       <image:loc>https://res.cloudinary.com/dkjcddqy0/image/upload/v1465082221/photo_y3c3bb.jpg</image:loc>
       <image:caption>Owner of Chelsea Felter</image:caption>
+      <image:title>Chelsea Felter</image:title>
     </image:image>  
   </url>
   <url>
