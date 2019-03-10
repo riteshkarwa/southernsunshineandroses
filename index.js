@@ -4,8 +4,27 @@ var bodyParser = require("body-parser");
 var app = express();
 var pg = require('pg');
 var cors = require('cors')
-var conString = process.env.DATABASE_URL || "postgres://gjdkdyoccbwtvd:t6zJ6YxmYvsXvShSi-wLVXT5es@ec2-107-21-106-196.compute-1.amazonaws.com:5432/d2lnocf9vtp4rq";
-//var conString = process.env.DATABASE_URL || "postgres://localhost:5432/testdb";
+const mysql = require('mysql');
+
+
+//var conString = process.env.DATABASE_URL || "postgres://postgres@root:35.235.118.138:5432/postgres";
+//var conString =  'postgresql://127.0.0.1:5432/postgres'
+//var conString = "postgresql://postgres:root@postgres?unix_socket=/cloudsql/southernsunshineandroses:us-west1:ssrpg";
+
+var connection = mysql.createConnection({
+  host: "35.233.200.131",
+  user: "postgres",
+  database: "postgres",
+  password: "root"
+});
+
+connection.connect(function(err) {
+  if (err) {
+    console.error('Error connecting: ' + err.stack);
+    return;
+  }
+  console.log('Connected as thread id: ' + connection.threadId);
+});
 
 /*
 Here we are configuring our SMTP Server details.
@@ -78,26 +97,34 @@ app.get('/home', function(request, response) {
 // Query Database to get all likes
 app.get('/api/all_likes', function(req, res) {
   var results=[];
-  pg.connect(conString,function(err, client, done) {
-      if(err) {
-          done();
-          console.log(err);
-          return res.status(500).json({ success: false, data: err});
-        }
+  connection.connect(function(err) {
+    if (err) {
+      console.error('Error connecting: ' + err.stack);
+      return res.status(500).json({ success: false, data: err});
+    }
+    console.log('Connected as thread id: ' + connection.threadId);
+ 
+  // pg.connect(conString,function(err, client, done) {
+  //     if(err) {
+  //         done();
+  //         console.log(err);
+  //         return res.status(500).json({ success: false, data: err});
+  //       }
 
-        // SQL Query > Select Data
-        var query = client.query("SELECT * FROM num_of_likes");
+    // SQL Query > Select Data
+    var query = client.query("SELECT * FROM num_of_likes");
+    console.log(query)
 
-        // Stream results back one row at a time
-        query.on('row', function(row) {
-            results.push(row);
-        });
-        // After all data is returned, close connection and return results
-        query.on('end', function() {
-            done();
-            return res.json(results);
-        });
+    // Stream results back one row at a time
+    query.on('row', function(row) {
+        results.push(row);
     });
+    // After all data is returned, close connection and return results
+    query.on('end', function() {
+        done();
+        return res.json(results);
+    });
+  });
 });
 
 app.put('/api/update_likes/:likes_id', function(req, res) {
