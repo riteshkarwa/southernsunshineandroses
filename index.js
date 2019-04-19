@@ -11,12 +11,21 @@ const mysql = require('mysql');
 //var conString =  'postgresql://127.0.0.1:5432/postgres'
 //var conString = "postgresql://postgres:root@postgres?unix_socket=/cloudsql/southernsunshineandroses:us-west1:ssrpg";
 
+// for local testing
 var connection = mysql.createConnection({
-  host: "35.233.200.131",
-  user: "postgres",
-  database: "postgres",
+  socketpath : "/cloudsql/southernsunshineandroses:us-west1:ssr19",
+  user: "root",
+  database: "SSR",
   password: "root"
 });
+
+// var connection = mysql.createConnection({
+//   user: process.env.DB_USER, // e.g. 'my-db-user'
+//   password: process.env.DB_PASS, // e.g. 'my-db-password'
+//   database: process.env.DB_NAME, // e.g. 'my-database'
+//   // If connecting via unix domain socket, specify the path
+//   socketPath: `/cloudsql/${process.env.CLOUD_SQL_CONNECTION_NAME}`
+// });
 
 connection.connect(function(err) {
   if (err) {
@@ -24,6 +33,7 @@ connection.connect(function(err) {
     return;
   }
   console.log('Connected as thread id: ' + connection.threadId);
+
 });
 
 /*
@@ -46,13 +56,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 /*Enable CORS*/
 app.use(cors())
+app.enable('trust proxy');
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 8080));
 
 app.use(express.static(__dirname + '/public'));
 
@@ -97,33 +108,22 @@ app.get('/home', function(request, response) {
 // Query Database to get all likes
 app.get('/api/all_likes', function(req, res) {
   var results=[];
-  connection.connect(function(err) {
-    if (err) {
-      console.error('Error connecting: ' + err.stack);
-      return res.status(500).json({ success: false, data: err});
-    }
-    console.log('Connected as thread id: ' + connection.threadId);
- 
   // pg.connect(conString,function(err, client, done) {
   //     if(err) {
   //         done();
   //         console.log(err);
   //         return res.status(500).json({ success: false, data: err});
   //       }
+  
+  //SQL Query > Select Data
+  connection.query("SELECT * FROM num_of_likes", function(err, rows, fields) {
+    if (err) throw err;
 
-    // SQL Query > Select Data
-    var query = client.query("SELECT * FROM num_of_likes");
-    console.log(query)
-
-    // Stream results back one row at a time
-    query.on('row', function(row) {
-        results.push(row);
-    });
-    // After all data is returned, close connection and return results
-    query.on('end', function() {
-        done();
-        return res.json(results);
-    });
+    for (var r in rows){
+      console.log(rows[r]);
+      results.push(rows[r]);
+    } 
+    return res.json(rows);
   });
 });
 
@@ -138,32 +138,49 @@ app.put('/api/update_likes/:likes_id', function(req, res) {
     var data = {likes: req.body.likes};
     console.log("Data "+ JSON.stringify(req.body));
 
-    // Get a Postgres client from the connection pool
-    pg.connect(conString, function(err, client, done) {
-        // Handle connection errors
-        if(err) {
-          done();
-          console.log(err);
-          return res.status(500).send(json({ success: false, data: err}));
-        }
 
-        // SQL Query > Update Data
-        client.query("UPDATE num_of_likes SET likes=($1) WHERE id=($2);", [data.likes, id]);
-
-        // SQL Query > Select Data
-        var query = client.query("SELECT * FROM num_of_likes;");
-
-        // Stream results back one row at a time
-        query.on('row', function(row) {
-            results.push(row);
-        });
-
-        // After all data is returned, close connection and return results
-        query.on('end', function() {
-            done();
-            return res.json(results);
-        });
+    connection.query("UPDATE num_of_likes SET likes=? WHERE id=?", [data.likes, id],function(err, result) {
+      if (err) throw err;
+      console.log(result);
     });
+
+    //SQL Query > Select Data
+    connection.query("SELECT * FROM num_of_likes", function(err, rows, fields) {
+      if (err) throw err;
+
+      for (var r in rows){
+        console.log(rows[r]);
+        results.push(rows[r]);
+      } 
+      return res.json(rows);
+    });
+
+    // // Get a Postgres client from the connection pool
+    // pg.connect(conString, function(err, client, done) {
+    //     // Handle connection errors
+    //     if(err) {
+    //       done();
+    //       console.log(err);
+    //       return res.status(500).send(json({ success: false, data: err}));
+    //     }
+
+    //     // SQL Query > Update Data
+    //     client.query("UPDATE num_of_likes SET likes=($1) WHERE id=($2);", [data.likes, id]);
+
+    //     // SQL Query > Select Data
+    //     var query = client.query("SELECT * FROM num_of_likes;");
+
+    //     // Stream results back one row at a time
+    //     query.on('row', function(row) {
+    //         results.push(row);
+    //     });
+
+    //     // After all data is returned, close connection and return results
+    //     query.on('end', function() {
+    //         done();
+    //         return res.json(results);
+    //     });
+    // });
 });
 
 app.get('*', function(request, response) {
