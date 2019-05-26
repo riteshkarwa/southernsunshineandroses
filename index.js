@@ -13,10 +13,11 @@ const mysql = require('mysql');
 
 // for local testing
 var connection = mysql.createConnection({
-  socketpath : "/cloudsql/southernsunshineandroses:us-west1:ssr19",
-  user: "root",
-  database: "SSR",
-  password: "root"
+  host : "remotemysql.com",
+  user: "46eVUlUe0z",
+  database: "46eVUlUe0z",
+  password: "eDeJrCrTqt",
+  port:"3306"
 });
 
 // var connection = mysql.createConnection({
