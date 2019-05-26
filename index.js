@@ -16,8 +16,8 @@ var connection = mysql.createConnection({
   host : "remotemysql.com",
   user: "46eVUlUe0z",
   database: "46eVUlUe0z",
-  password: "eDeJrCrTqt",
-  port:"3306"
+  password: "eDeJrCrTqt"
+  //port:"3306"
 });
 
 // var connection = mysql.createConnection({
